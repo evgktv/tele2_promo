@@ -1,0 +1,36 @@
+.header__logo {
+	position: absolute;
+	content: "";
+	z-index: 50;
+
+	top: 0;
+	left: 10%;
+	width: 80px;
+	height: 40px;
+
+
+	background:
+		url(../img/logo.png) 10px 30% no-repeat,
+		#000;
+
+	background-size: 60px auto;
+
+	@media @mobile-widths-only and (orientation: landscape) {
+
+		left: 0;
+	}
+
+	@media @tablet-widths {
+
+		left: 100px;
+
+		width: 140px;
+  	height: 70px;
+
+  	background:
+  		url(../img/logo.png) 25px 30% no-repeat,
+  		#000;
+
+  	background-size: 90px auto;
+  }
+}
